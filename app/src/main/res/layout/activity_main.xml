@@ -10,15 +10,32 @@
             android:text="@string/music_stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/stopButton"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBaseline_toBaselineOf="@+id/startButton"
-            app:layout_constraintEnd_toStartOf="@+id/startButton" android:layout_marginEnd="7dp"
+            android:id="@+id/playStopButton"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBaseline_toBaselineOf="@+id/playStartButton"
+            app:layout_constraintEnd_toStartOf="@+id/playStartButton" android:layout_marginEnd="7dp"
     />
     <Button
             android:text="@string/music_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/startButton" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="318dp" app:layout_constraintStart_toEndOf="@+id/stopButton"
+            android:id="@+id/playStartButton" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="318dp" app:layout_constraintStart_toEndOf="@+id/playStopButton"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="@string/record_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recordStopButton" android:layout_marginTop="172dp"
+            app:layout_constraintEnd_toStartOf="@+id/recordStartButton" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="7dp"/>
+    <Button
+            android:text="@string/record_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recordStartButton"
+            app:layout_constraintBaseline_toBaselineOf="@+id/recordStopButton"
+            app:layout_constraintStart_toEndOf="@+id/recordStopButton"
+            android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"/>
 </android.support.constraint.ConstraintLayout>
