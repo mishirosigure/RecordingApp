@@ -9,7 +9,8 @@ import android.os.Environment
     /*
     録音処理
      */
-    private var mr : MediaRecorder? = null
+
+    private var mr : MediaRecorder?  = null
     var filePath : String = "${Environment.getExternalStorageDirectory()}/sample.wav"
 
     fun startMediaRecord(){

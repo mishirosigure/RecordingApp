@@ -10,22 +10,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        recordStartButton.setOnClickListener {
-            startMediaRecord()
+        playButton.setOnCheckedChangeListener { _, isChecked ->
+
+            if (isChecked) {
+                startPlay()
+            } else {
+                stopPlay()
+            }
         }
 
-        recordStopButton.setOnClickListener {
-            stopMediaRecord()
-        }
-
-        playStartButton.setOnClickListener {
-            startPlay()
-        }
-
-        playStopButton.setOnClickListener {
-            stopPlay()
+        recordButton.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                startMediaRecord()
+            } else {
+                stopMediaRecord()
+            }
         }
     }
-
-
 }

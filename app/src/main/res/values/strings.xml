@@ -4,4 +4,5 @@
     <string name="music_start">再生開始</string>
     <string name="record_start">録音開始</string>
     <string name="record_stop">録音停止</string>
+    <string name="record_toggle">録音開始</string>
 </resources>
